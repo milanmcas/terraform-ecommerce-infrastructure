@@ -7,3 +7,8 @@ variable "environment" {
     error_message = "Environment must be one of: dev, qa, prod."
   }
 }
+variable "aws_region" {
+  description = "AWS region where the infrastructure will be provisioned."
+  type        = string
+  default     = "ap-south-1"
+}
