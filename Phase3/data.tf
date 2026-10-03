@@ -18,3 +18,8 @@ data "aws_ami" "amazon_linux" {
     values = ["x86_64"]
   }
 }
+data "aws_region" "current" {}
+
+data "aws_vpc" "selected" {
+  id = "vpc-0cdb5a2b7d978ee3a"
+}
